@@ -11,4 +11,14 @@
         <item name="android:textColor">@color/White</item>
     </style>
 
+    <style name="ViewTheme">
+
+        <item name="android:layout_marginTop">@dimen/margin_16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+
+
+    </style>
+
 </resources>

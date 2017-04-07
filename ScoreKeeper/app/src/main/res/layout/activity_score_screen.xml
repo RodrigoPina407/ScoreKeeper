@@ -25,51 +25,36 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_16dp"
-                    android:gravity="center"
+                    style="@style/ViewTheme"
                     android:text="@string/team_1"
                     android:textColor="@color/Red"
                     android:textSize="@dimen/Team"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_16dp"
-                    android:gravity="center"
+                    style="@style/ViewTheme"
                     android:text="@string/goals"
                     android:textSize="@dimen/Team"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/team1_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ViewTheme"
                     android:layout_marginTop="@dimen/margin_8dp"
-                    android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/White"
                     android:textSize="@dimen/score" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_16dp"
-                    android:gravity="center"
+                    style="@style/ViewTheme"
                     android:text="@string/fouls"
                     android:textSize="@dimen/Team"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/team1_fouls"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ViewTheme"
                     android:layout_marginTop="@dimen/margin_8dp"
-                    android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/White"
                     android:textSize="@dimen/score" />
 
                 <LinearLayout
@@ -100,8 +85,7 @@
 
                 <Button
                     android:id="@+id/team1_foul"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ViewTheme"
                     android:layout_marginTop="@dimen/margin_6dp"
                     android:onClick="foul"
                     android:text="@string/foul" />
@@ -121,51 +105,36 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_16dp"
-                    android:gravity="center"
+                    style="@style/ViewTheme"
                     android:text="@string/team_2"
                     android:textColor="@color/Blue"
                     android:textSize="@dimen/Team"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_16dp"
-                    android:gravity="center"
+                    style="@style/ViewTheme"
                     android:text="@string/goals"
                     android:textSize="@dimen/Team"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/team2_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ViewTheme"
                     android:layout_marginTop="@dimen/margin_8dp"
-                    android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/White"
                     android:textSize="@dimen/score" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_16dp"
-                    android:gravity="center"
+                    style="@style/ViewTheme"
                     android:text="@string/fouls"
                     android:textSize="@dimen/Team"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/team2_fouls"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ViewTheme"
                     android:layout_marginTop="@dimen/margin_8dp"
-                    android:gravity="center"
                     android:text="0"
-                    android:textColor="@color/White"
                     android:textSize="@dimen/score" />
 
                 <LinearLayout
@@ -193,8 +162,7 @@
 
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ViewTheme"
                     android:layout_marginTop="@dimen/margin_6dp"
                     android:onClick="foul"
                     android:text="@string/foul" />
