@@ -14,6 +14,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static android.R.attr.value;
+import static com.example.android.scorekeeper.R.dimen.score;
 import static com.example.android.scorekeeper.R.drawable.ball;
 import static com.example.android.scorekeeper.R.id.sound;
 import static com.example.android.scorekeeper.R.id.team1_fouls;
@@ -21,6 +23,11 @@ import static com.example.android.scorekeeper.R.string.goals;
 
 public class ScoreScreen extends AppCompatActivity {
 
+
+    private TextView team1_score_text = null;
+    private TextView team2_score_text = null;
+    private TextView team1_fouls_text = null;
+    private TextView team2_fouls_text = null;
 
     private int team1_score = 0;
     private int team2_score = 0;
@@ -37,6 +44,11 @@ public class ScoreScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_screen);
 
+        team1_score_text = (TextView) findViewById(R.id.team1_score);
+        team2_score_text = (TextView) findViewById(R.id.team2_score);
+        team1_fouls_text = (TextView) findViewById(R.id.team1_fouls);
+        team2_fouls_text = (TextView) findViewById(R.id.team2_fouls);
+
         if (savedInstanceState != null) {
 
             // Restore value of members from saved state
@@ -45,15 +57,19 @@ public class ScoreScreen extends AppCompatActivity {
             team1_fouls = savedInstanceState.getInt(FOULS_1);
             team2_fouls = savedInstanceState.getInt(FOULS_2);
 
-            TextView team1_score_text = (TextView) findViewById(R.id.team1_score);
-            TextView team2_score_text = (TextView) findViewById(R.id.team2_score);
-            TextView team1_fouls_text = (TextView) findViewById(R.id.team1_fouls);
-            TextView team2_fouls_text = (TextView) findViewById(R.id.team2_fouls);
-
             team1_score_text.setText(String.valueOf(team1_score));
             team2_score_text.setText(String.valueOf(team2_score));
             team1_fouls_text.setText(String.valueOf(team1_fouls));
             team2_fouls_text.setText(String.valueOf(team2_fouls));
+        } else
+
+        {
+
+            team1_score_text.setText("0");
+            team2_score_text.setText("0");
+            team1_fouls_text.setText("0");
+            team2_fouls_text.setText("0");
+
         }
     }
 
@@ -70,15 +86,11 @@ public class ScoreScreen extends AppCompatActivity {
 
     public void reset(View view) {
 
-        TextView team1_goals = (TextView) findViewById(R.id.team1_score);
-        TextView team2_goals = (TextView) findViewById(R.id.team2_score);
-        TextView team1_fouls_view = (TextView) findViewById(R.id.team1_fouls);
-        TextView team2_fouls_view = (TextView) findViewById(R.id.team2_fouls);
 
-        team1_goals.setText("0");
-        team2_goals.setText("0");
-        team1_fouls_view.setText("0");
-        team2_fouls_view.setText("0");
+        team1_score_text.setText("0");
+        team2_score_text.setText("0");
+        team1_fouls_text.setText("0");
+        team2_fouls_text.setText("0");
 
         team1_score = 0;
         team2_score = 0;
@@ -145,13 +157,13 @@ public class ScoreScreen extends AppCompatActivity {
 
             team1_score++;
 
-            TextView score = (TextView) findViewById(R.id.team1_score);
-            score.setText(String.valueOf(team1_score));
+            team1_score_text.setText(String.valueOf(team1_score));
+
         } else {
 
             team2_score++;
-            TextView score = (TextView) findViewById(R.id.team2_score);
-            score.setText(String.valueOf(team2_score));
+
+            team2_score_text.setText(String.valueOf(team2_score));
         }
 
 
@@ -167,14 +179,14 @@ public class ScoreScreen extends AppCompatActivity {
             if (team1_score > 0)
                 team1_score--;
 
-            TextView score = (TextView) findViewById(R.id.team1_score);
-            score.setText(String.valueOf(team1_score));
+            team1_score_text.setText(String.valueOf(team1_score));
+
         } else {
 
             if (team2_score > 0)
                 team2_score--;
-            TextView score = (TextView) findViewById(R.id.team2_score);
-            score.setText(String.valueOf(team2_score));
+
+            team2_score_text.setText(String.valueOf(team2_score));
         }
 
     }
@@ -187,6 +199,7 @@ public class ScoreScreen extends AppCompatActivity {
         CheckBox sound = (CheckBox) findViewById(R.id.sound);
 
         if (image.isChecked()) {
+
             ImageView img_whistle = new ImageView(this);
 
             img_whistle.setImageResource(R.drawable.whistle_img);
@@ -212,15 +225,13 @@ public class ScoreScreen extends AppCompatActivity {
 
         if (team == R.id.team1_foul) {
 
-            TextView value = (TextView) findViewById(R.id.team1_fouls);
             team1_fouls++;
-            value.setText(String.valueOf(team1_fouls));
+            team1_fouls_text.setText(String.valueOf(team1_fouls));
 
         } else {
 
-            TextView value = (TextView) findViewById(R.id.team2_fouls);
             team2_fouls++;
-            value.setText(String.valueOf(team2_fouls));
+            team2_fouls_text.setText(String.valueOf(team2_fouls));
 
         }
     }

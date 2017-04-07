@@ -16,11 +16,10 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/football_scorekeeper"
         android:layout_marginTop="@dimen/margin_42dp"
         android:textColor="@color/Red"
-        android:gravity="center"
+        style="@style/ViewTheme"
         android:textStyle="bold"
         android:textSize="@dimen/Title"
         android:fontFamily="serif-monospace"
