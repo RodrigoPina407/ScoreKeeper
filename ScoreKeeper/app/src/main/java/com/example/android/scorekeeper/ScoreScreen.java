@@ -36,13 +36,18 @@ public class ScoreScreen extends AppCompatActivity {
 
         TextView team1_goals = (TextView) findViewById(R.id.team1_score);
         TextView team2_goals = (TextView) findViewById(R.id.team2_score);
-        TextView team1_fouls = (TextView) findViewById(R.id.team1_fouls);
-        TextView team2_fouls = (TextView) findViewById(R.id.team2_fouls);
+        TextView team1_fouls_view = (TextView) findViewById(R.id.team1_fouls);
+        TextView team2_fouls_view = (TextView) findViewById(R.id.team2_fouls);
 
         team1_goals.setText("0");
         team2_goals.setText("0");
-        team1_fouls.setText("0");
-        team2_fouls.setText("0");
+        team1_fouls_view.setText("0");
+        team2_fouls_view.setText("0");
+
+        team1_score = 0;
+        team2_score = 0;
+        team1_fouls = 0;
+        team2_fouls = 0;
 
 
     }

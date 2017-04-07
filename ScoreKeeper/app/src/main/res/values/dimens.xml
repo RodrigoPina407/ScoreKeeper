@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Team">24sp</dimen>
+    <dimen name="score">64sp</dimen>
+    <dimen name="Title">48sp</dimen>
+    <dimen name="ball_width">180dp</dimen>
+    <dimen name="ball_height">180dp</dimen>
+</resources>

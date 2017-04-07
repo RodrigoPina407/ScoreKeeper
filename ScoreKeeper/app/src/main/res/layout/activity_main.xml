@@ -22,13 +22,13 @@
         android:textColor="@color/Red"
         android:gravity="center"
         android:textStyle="bold"
-        android:textSize="48sp"
+        android:textSize="@dimen/Title"
         android:fontFamily="serif-monospace"
         android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="@dimen/ball_width"
+        android:layout_height="@dimen/ball_height"
         android:text="@string/kickoff"
         android:textSize="32sp"
         android:gravity="center"
