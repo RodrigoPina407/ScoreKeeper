@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import static com.example.android.scorekeeper.R.drawable.ball;
 import static com.example.android.scorekeeper.R.id.sound;
+import static com.example.android.scorekeeper.R.id.team1_fouls;
 import static com.example.android.scorekeeper.R.string.goals;
 
 public class ScoreScreen extends AppCompatActivity {
@@ -26,10 +27,45 @@ public class ScoreScreen extends AppCompatActivity {
     private int team1_fouls = 0;
     private int team2_fouls = 0;
 
+    static final String SCORE_1 = "team 1 score";
+    static final String SCORE_2 = "team 2 score";
+    static final String FOULS_1 = "team 1 fouls";
+    static final String FOULS_2 = "team 2 fouls";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_screen);
+
+        if (savedInstanceState != null) {
+
+            // Restore value of members from saved state
+            team1_score = savedInstanceState.getInt(SCORE_1);
+            team2_score = savedInstanceState.getInt(SCORE_2);
+            team1_fouls = savedInstanceState.getInt(FOULS_1);
+            team2_fouls = savedInstanceState.getInt(FOULS_2);
+
+            TextView team1_score_text = (TextView) findViewById(R.id.team1_score);
+            TextView team2_score_text = (TextView) findViewById(R.id.team2_score);
+            TextView team1_fouls_text = (TextView) findViewById(R.id.team1_fouls);
+            TextView team2_fouls_text = (TextView) findViewById(R.id.team2_fouls);
+
+            team1_score_text.setText(String.valueOf(team1_score));
+            team2_score_text.setText(String.valueOf(team2_score));
+            team1_fouls_text.setText(String.valueOf(team1_fouls));
+            team2_fouls_text.setText(String.valueOf(team2_fouls));
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the user's current game state
+        savedInstanceState.putInt(SCORE_1, team1_score);
+        savedInstanceState.putInt(SCORE_2, team2_score);
+        savedInstanceState.putInt(FOULS_1, team1_fouls);
+        savedInstanceState.putInt(FOULS_2, team2_fouls);
+
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     public void reset(View view) {
