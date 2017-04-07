@@ -27,7 +27,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:gravity="center"
                     android:text="@string/team_1"
                     android:textColor="@color/Red"
@@ -37,7 +37,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:gravity="center"
                     android:text="@string/goals"
                     android:textSize="@dimen/Team"
@@ -47,7 +47,7 @@
                     android:id="@+id/team1_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
                     android:gravity="center"
                     android:text="0"
                     android:textColor="@color/White"
@@ -56,7 +56,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:gravity="center"
                     android:text="@string/fouls"
                     android:textSize="@dimen/Team"
@@ -66,7 +66,7 @@
                     android:id="@+id/team1_fouls"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
                     android:gravity="center"
                     android:text="0"
                     android:textColor="@color/White"
@@ -81,7 +81,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="@dimen/margin_6dp"
                         android:layout_weight="1"
                         android:onClick="goal"
                         android:text="@string/goal" />
@@ -91,7 +91,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="@dimen/margin_6dp"
                         android:layout_weight="1"
                         android:onClick="voidGoal"
                         android:text="@string/void_goal" />
@@ -102,7 +102,7 @@
                     android:id="@+id/team1_foul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="@dimen/margin_6dp"
                     android:onClick="foul"
                     android:text="@string/foul" />
 
@@ -111,7 +111,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/margin_8dp"
                 android:background="@color/colorPrimary" />
 
             <LinearLayout
@@ -123,7 +123,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:gravity="center"
                     android:text="@string/team_2"
                     android:textColor="@color/Blue"
@@ -133,7 +133,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:gravity="center"
                     android:text="@string/goals"
                     android:textSize="@dimen/Team"
@@ -143,7 +143,7 @@
                     android:id="@+id/team2_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
                     android:gravity="center"
                     android:text="0"
                     android:textColor="@color/White"
@@ -152,7 +152,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
                     android:gravity="center"
                     android:text="@string/fouls"
                     android:textSize="@dimen/Team"
@@ -162,7 +162,7 @@
                     android:id="@+id/team2_fouls"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
                     android:gravity="center"
                     android:text="0"
                     android:textColor="@color/White"
@@ -176,7 +176,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="@dimen/margin_6dp"
                         android:layout_weight="1"
                         android:onClick="goal"
                         android:text="@string/goal" />
@@ -185,7 +185,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="@dimen/margin_6dp"
                         android:layout_weight="1"
                         android:onClick="voidGoal"
                         android:text="@string/void_goal" />
@@ -195,7 +195,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="@dimen/margin_6dp"
                     android:onClick="foul"
                     android:text="@string/foul" />
 
@@ -206,13 +206,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="@dimen/margin_8dp">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_8dp"
                 android:onClick="reset"
                 android:text="@string/reset" />
 
@@ -221,7 +221,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/margin_8dp"
                 android:checked="true"
                 android:onClick="soundStatus"
                 android:text="@string/sound_on" />
@@ -232,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="@dimen/margin_8dp"
                 android:checked="true"
                 android:onClick="imageStatus"
                 android:text="@string/images_on" />
