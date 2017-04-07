@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:rotation="90"
+        android:src="@drawable/estadio"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/football_scorekeeper"
+        android:layout_marginTop="42dp"
+        android:textColor="@color/Red"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:fontFamily="serif-monospace"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:text="@string/kickoff"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textColor="@color/Red"
+        android:textStyle="bold"
+        android:background="@drawable/ball"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:onClick="start"/>
+
+
+
+</RelativeLayout>

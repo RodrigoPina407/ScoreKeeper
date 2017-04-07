@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Resultado</string>
+    <string name="football_scorekeeper">Resultado Futebol</string>
+    <string name="foul">Falta</string>
+    <string name="fouls">Faltas</string>
+    <string name="goal">GOLO</string>
+    <string name="goals">Golos</string>
+    <string name="kickoff">Ponta-Pé</string>
+    <string name="sound_off">Som OFF</string>
+    <string name="sound_on">Som On</string>
+    <string name="team_1">Equipa 1</string>
+    <string name="team_2">Equipa 2</string>
+    <string name="void_goal">ANULADO</string>
+    <string name="images_off">Imagens OFF</string>
+    <string name="images_on">Imagens ON</string>
+</resources>

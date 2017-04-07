@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ScoreKeeper</string>
+    <string name="goals">Goals</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="void_goal">VOID GOAL</string>
+    <string name="goal">GOAL</string>
+    <string name="reset" translatable="false">Reset</string>
+    <string name="foul">Foul</string>
+    <string name="fouls">Fouls</string>
+    <string name="kickoff">KickOff</string>
+    <string name="football_scorekeeper">Football ScoreKeeper</string>
+    <string name="sound_on">Sound ON</string>
+    <string name="sound_off">Sound OFF</string>
+    <string name="images_on">Images ON</string>
+    <string name="images_off">Images OFF</string>
+</resources>
