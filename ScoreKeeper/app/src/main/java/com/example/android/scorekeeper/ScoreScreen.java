@@ -28,6 +28,8 @@ public class ScoreScreen extends AppCompatActivity {
     private TextView team2_score_text = null;
     private TextView team1_fouls_text = null;
     private TextView team2_fouls_text = null;
+    private CheckBox sound = null;
+    private CheckBox image = null;
 
     private int team1_score = 0;
     private int team2_score = 0;
@@ -48,6 +50,8 @@ public class ScoreScreen extends AppCompatActivity {
         team2_score_text = (TextView) findViewById(R.id.team2_score);
         team1_fouls_text = (TextView) findViewById(R.id.team1_fouls);
         team2_fouls_text = (TextView) findViewById(R.id.team2_fouls);
+        sound = (CheckBox) findViewById(R.id.sound);
+        image = (CheckBox) findViewById(R.id.images);
 
         if (savedInstanceState != null) {
 
@@ -102,8 +106,6 @@ public class ScoreScreen extends AppCompatActivity {
 
     public void soundStatus(View view) {
 
-        CheckBox sound = (CheckBox) findViewById(R.id.sound);
-
         if (sound.isChecked())
 
             sound.setText(R.string.sound_on);
@@ -115,7 +117,6 @@ public class ScoreScreen extends AppCompatActivity {
 
     public void imageStatus(View view) {
 
-        CheckBox image = (CheckBox) findViewById(R.id.images);
 
         if (image.isChecked())
             image.setText(R.string.images_on);
@@ -126,9 +127,6 @@ public class ScoreScreen extends AppCompatActivity {
 
 
     public void goal(View view) {
-
-        CheckBox image = (CheckBox) findViewById(R.id.images);
-        CheckBox sound = (CheckBox) findViewById(R.id.sound);
 
         if (image.isChecked()) {
             ImageView ball = new ImageView(this);
@@ -192,11 +190,6 @@ public class ScoreScreen extends AppCompatActivity {
     }
 
     public void foul(View view) {
-
-
-        CheckBox image = (CheckBox) findViewById(R.id.images);
-
-        CheckBox sound = (CheckBox) findViewById(R.id.sound);
 
         if (image.isChecked()) {
 
